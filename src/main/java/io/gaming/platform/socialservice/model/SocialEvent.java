@@ -21,7 +21,7 @@ public record SocialEvent(
             UUID.randomUUID().toString(),
             Instant.now(),
             requesterId,
-            Map.of("targetId", targetId)
+            Map.of("otherPlayerId", targetId)
         );
     }
 
@@ -32,7 +32,7 @@ public record SocialEvent(
             UUID.randomUUID().toString(),
             Instant.now(),
             accepterId,
-            Map.of("requesterId", requesterId)
+            Map.of("otherPlayerId", requesterId)
         );
     }
 
@@ -43,7 +43,7 @@ public record SocialEvent(
             UUID.randomUUID().toString(),
             Instant.now(),
             followerId,
-            Map.of("followedId", followedId)
+            Map.of("otherPlayerId", followedId)
         );
     }
 } 
