@@ -65,7 +65,7 @@ Content-Type: application/json
 
 {
     "acceptorId": 456,
-    "requesterId": 123
+    "targetId": 123
 }
 ```
 
